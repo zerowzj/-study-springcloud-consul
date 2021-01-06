@@ -1,10 +1,8 @@
 package study.springcloud.consul.support;
 
-import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@EnableApolloConfig
-@SpringBootApplication(scanBasePackages = "study.springcloud.apollo")
+@SpringBootApplication(scanBasePackages = "study.springcloud.consul")
 public class SpringBootCfg {
 
 }
