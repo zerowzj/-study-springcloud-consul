@@ -1,0 +1,22 @@
+#
+server:
+  port: 7000
+#
+logging:
+  config: classpath:logback.xml
+#
+spring:
+  application:
+    name: study-springcloud-consul
+  main:
+    web-application-type: servlet
+    banner-mode: off
+  #
+  profiles:
+    active: @env@
+  cloud:
+    consul:
+      host: 172.26.130.107
+      port: 8500
+      discovery:
+        enabled: false
