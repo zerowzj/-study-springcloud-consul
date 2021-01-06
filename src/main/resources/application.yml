@@ -15,8 +15,11 @@ spring:
   profiles:
     active: @env@
   cloud:
+    #
     consul:
       host: 172.26.130.107
       port: 8500
       discovery:
         enabled: false
+        health-check-interval: 10
+        health-check-timeout: 1
